@@ -104,7 +104,7 @@ img {
     position: relative;
 }
 
-.header-menu-item::after {
+.header-menu-active::after {
     content: '';
     /* display: block; */
     width: 100%;
@@ -240,10 +240,10 @@ img {
     margin-bottom: 8px;
 }
 
-.icon-item-svg {
+/* .icon-item-svg {
     width: 64px;
     height: 64px;
-}
+} */
 
 .business-list {
     display: flex;
