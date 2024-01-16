@@ -97,7 +97,7 @@ img {
     line-height: 24px;
     letter-spacing: 0.02em;
     padding: 24px 0;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-menu-item {
@@ -165,21 +165,24 @@ a.menu-contact-link:hover {
 
 /*!-------------------MAIN BANNER-------------- */
 
-/* .main-banner {
-            
-} */
-
-.banner-container {
-    max-width: 1440px;
-    background-color: #2E2F42;
+.main-banner {
     padding: 188px 0;
+    background-color: #2E2F42;
+    max-width: 1440px;
     background-image: linear-gradient(
             rgba(46, 47, 66, 0.70),
             rgba(46, 47, 66, 0.70)), 
             url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;    
+    background-size: cover;       
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.banner-container {
+       
 }
 
 .main-banner-title {
@@ -344,6 +347,7 @@ a.menu-contact-link:hover {
 .team-soc-item {
     width: 40px;
     height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link {
