@@ -436,29 +436,28 @@ a.menu-contact-link:hover {
 .portfolio-cover-wrap {
     position: relative;
     overflow: hidden;
-}
-
-.portfolio-list-item:hover .portfolio-text-wrap {
-    transform: translateY(0%);
-}
-
-.portfolio-text-wrap {
-    position: absolute;
-    top: 0;
-    background: #4D5AE5;
-    height: 100%;
     display: flex;
     justify-content: center;
-    padding: 40px 32px;
-    transform: translateY(100%);
+}
+
+.portfolio-cover-wrap:hover .portfolio-cover-text {
+    transform: translateY(0%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 .portfolio-cover-text {
+    position: absolute;
+    top: 0;
     color: #F4F4FD;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 40px 32px;
+    background-color: #4d5ae5;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
 }
 
 /*?-------------------FOOTER-------------- */
